@@ -1,5 +1,5 @@
-//Initial Template for C++
-
+// Initial Template for C++
+// This can be done with standard libaray or without standard library.
 
 #include<bits/stdc++.h>
 using namespace std;
