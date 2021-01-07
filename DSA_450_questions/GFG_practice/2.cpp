@@ -1,22 +1,43 @@
-#include <iostream>
+// { Driver Code Starts
+//Initial template for C++
+
+#include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    
-    int n;
-    cin >> n;
-    
-    int a[n];
-    for(int i=0; i<n; i++)
-        cin >> a[i];
-    int i=0; int j=n-1;
-    while(i < j) {
-        swap(a[i], a[j]);
-        i++; j--;
+ // } Driver Code Ends
+
+
+//User function template for C++
+
+class Solution{
+  public:
+    int middle(int A, int B, int C){
+        //code here//Position this line where user code will be pasted.
+        if(A > B) {
+            if(B > C)
+                return B;
+            else
+                return C;
+        } else {
+            if(A > C)
+                return A;
+            else
+                return C;
+        }
     }
-    
-    for(int i=0; i<n; i++)
-        cout << a[i] << " "; 
-    
-    
-}
+};
+
+// { Driver Code Starts.
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int A,B,C;
+        cin>>A>>B>>C;
+        Solution ob;
+        cout<<ob.middle(A,B,C) <<"\n";
+    }
+    return 0;
+}  // } Driver Code Ends
