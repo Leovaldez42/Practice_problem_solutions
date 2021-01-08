@@ -6,6 +6,14 @@ void rightRotateByOne (int arr[], int n) {
     for (i = n - 1; i > 0; i--)
         arr[i] = arr[i - 1];
     arr[0] = temp;
+    // A inbuilt function ;
+	// right shift
+	// rotate(v.begin(), v.begin()+v.size()-k, v.end());
+	
+	// left shift
+	// rotate(v.begin(), v.begin()+k, v.end());
+	
+		
 }
 
 int main() {
